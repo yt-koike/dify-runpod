@@ -1,0 +1,22 @@
+identity:
+  name: "find_pod"
+  author: "yt-koike"
+  label:
+    en_US: "Find Pod"
+description:
+  human:
+    en_US: "Find Pod"
+  llm: "Find Pod"
+parameters:
+  - name: pod_id
+    type: string
+    required: true
+    label:
+      en_US: Pod ID
+    human_description:
+      en_US: "Pod ID"
+    llm_description: "Pod ID"
+    form: llm
+extra:
+  python:
+    source: tools/find_pod.py

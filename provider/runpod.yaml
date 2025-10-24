@@ -2,15 +2,9 @@ identity:
   author: "yt-koike"
   name: "runpod"
   label:
-    en_US: "runpod"
-    zh_Hans: "runpod"
-    pt_BR: "runpod"
-    ja_JP: "runpod"
+    en_US: "Runpod"
   description:
     en_US: "Runpod plugin for dify"
-    zh_Hans: "Runpod plugin for dify"
-    pt_BR: "Runpod plugin for dify"
-    ja_JP: "Runpod plugin for dify"
   icon: "icon.svg"
 
 #########################################################################################
@@ -56,7 +50,24 @@ identity:
 #         en_US: "Access Token"
 
 tools:
-  - tools/runpod.yaml
+  - tools/billing_pod.yaml
+  - tools/create_pod.yaml
+  - tools/delete_pod.yaml
+  - tools/find_pod.yaml
+  - tools/list_pods.yaml
+  - tools/reset_pod.yaml
+  - tools/restart_pod.yaml
+  - tools/start_pod.yaml
+  - tools/stop_pod.yaml
 extra:
   python:
     source: provider/runpod.py
+credentials_for_provider:
+  runpod_api_key:
+    label:
+      en_US: Runpod API Key
+    placeholder:
+      en_US: Please input your Runpod API Key
+      zh_Hans: 请输入你的 Runpod API Key
+    required: true
+    type: secret-input

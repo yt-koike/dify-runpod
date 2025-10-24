@@ -1,0 +1,13 @@
+identity:
+  name: "billing_pod"
+  author: "yt-koike"
+  label:
+    en_US: "Billing Pod"
+description:
+  human:
+    en_US: "Billing Pod"
+  llm: "Billing Pod"
+parameters:
+extra:
+  python:
+    source: tools/billing_pod.py

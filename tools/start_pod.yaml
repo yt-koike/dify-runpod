@@ -1,0 +1,22 @@
+identity:
+  name: "start_pod"
+  author: "yt-koike"
+  label:
+    en_US: "Start Pod"
+description:
+  human:
+    en_US: "Start Pod"
+  llm: "Start Pod"
+parameters:
+  - name: pod_id
+    type: string
+    required: true
+    label:
+      en_US: Pod ID
+    human_description:
+      en_US: "Pod ID"
+    llm_description: "Pod ID"
+    form: llm
+extra:
+  python:
+    source: tools/start_pod.py

@@ -1,0 +1,22 @@
+identity:
+  name: "restart_pod"
+  author: "yt-koike"
+  label:
+    en_US: "Restart Pod"
+description:
+  human:
+    en_US: "Restart Pod"
+  llm: "Restart Pod"
+parameters:
+  - name: pod_id
+    type: string
+    required: true
+    label:
+      en_US: Pod ID
+    human_description:
+      en_US: "Pod ID"
+    llm_description: "Pod ID"
+    form: llm
+extra:
+  python:
+    source: tools/restart_pod.py

@@ -1,0 +1,13 @@
+identity:
+  name: "list_pods"
+  author: "yt-koike"
+  label:
+    en_US: "List Pods"
+description:
+  human:
+    en_US: "List Pods"
+  llm: "List Pods"
+parameters:
+extra:
+  python:
+    source: tools/list_pods.py

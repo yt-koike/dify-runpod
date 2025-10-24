@@ -1,0 +1,22 @@
+identity:
+  name: "create_pod"
+  author: "yt-koike"
+  label:
+    en_US: "Create Pod"
+description:
+  human:
+    en_US: "Create Pod"
+  llm: "Create Pod"
+parameters:
+  - name: templateId
+    type: string
+    required: false
+    label:
+      en_US: Template ID
+    human_description:
+      en_US: "Template ID"
+    llm_description: "Template ID"
+    form: llm
+extra:
+  python:
+    source: tools/create_pod.py
