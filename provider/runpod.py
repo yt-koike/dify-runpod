@@ -9,7 +9,7 @@ from tools.runpod_client import RunpodClient
 class RunpodProvider(ToolProvider):
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
         try:
-            api_key = self.runtime.credentials.get("runpod_api_key")
+            api_key = credentials.get("runpod_api_key")
             runpod = RunpodClient(api_key)
             runpod.list_pods()
         except Exception as e:
