@@ -9,6 +9,9 @@
 This is an unofficial Runpod plugin for Dify and is basically [Runpod Rest API](https://docs.runpod.io/api-reference/overview) turned into Dify nodes.
 So far this plugin only supports API calls related to Pods.
 
+Runpod offers virtual machines with GPUs on cloud and let us to run LLMs, image&video generation and so on.
+This plugin can enhance Dify's possibility by enabling it to start and manage GPU VMs online without complex settings or hardware owned by users.
+
 ### Setup
 
 You can simply use this plugin by installing it.
