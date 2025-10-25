@@ -11,3 +11,10 @@ parameters:
 extra:
   python:
     source: tools/list_pods.py
+output_schema:
+  type: object
+  properties:
+    podIds:
+      type: array[string]
+      label:
+        en_US: Pod IDs

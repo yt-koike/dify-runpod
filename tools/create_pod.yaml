@@ -10,13 +10,48 @@ description:
 parameters:
   - name: templateId
     type: string
-    required: false
+    required: true
     label:
       en_US: Template ID
     human_description:
       en_US: "Template ID"
     llm_description: "Template ID"
     form: llm
+  - name: gpuTypeId
+    type: string
+    required: true
+    label:
+      en_US: GPU Type
+    human_description:
+      en_US: "GPU Type"
+    llm_description: "GPU Type"
+    form: llm
+  - name: gpuCount
+    type: number
+    required: true
+    default: 1
+    label:
+      en_US: GPU Count
+    human_description:
+      en_US: "GPU Count"
+    llm_description: "GPU Count"
+    form: llm
+  - name: name
+    type: string
+    required: false
+    label:
+      en_US: Pod Name
+    human_description:
+      en_US: "Pod Name"
+    llm_description: "Name for Pod"
+    form: llm
 extra:
   python:
     source: tools/create_pod.py
+output_schema:
+  type: object
+  properties:
+    podId:
+      type: string
+      label:
+        en_US: Pod ID

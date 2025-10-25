@@ -11,3 +11,30 @@ parameters:
 extra:
   python:
     source: tools/billing_pod.py
+output_schema:
+  type: object
+  properties:
+    amount:
+      type: array[number]
+      label:
+        en_US: amount
+    endpointId:
+      type: array[string]
+      label:
+        en_US: endpointId
+    gpuTypeId:
+      type: array[string]
+      label:
+        en_US: gpuTypeId
+    podId:
+      type: array[string]
+      label:
+        en_US: podId
+    time:
+      type: array[string]
+      label:
+        en_US: Start Time
+    timeBilledMs:
+      type: array[number]
+      label:
+        en_US: Time Billed

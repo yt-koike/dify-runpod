@@ -10,4 +10,5 @@ class ListPods(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
         api_key = self.runtime.credentials.get("runpod_api_key")
         runpod = RunpodClient(api_key)
-        yield self.create_text_message(str(runpod.list_pods()))
+        podIds = [pod["id"] for pod in runpod.list_pods()]
+        yield self.create_variable_message("podIds", podIds)

@@ -3,13 +3,15 @@ from typing import Any
 from dify_plugin import ToolProvider
 from dify_plugin.errors.tool import ToolProviderCredentialValidationError
 
+from tools.runpod_client import RunpodClient
+
 
 class RunpodProvider(ToolProvider):
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
         try:
-            """
-            IMPLEMENT YOUR VALIDATION HERE
-            """
+            api_key = self.runtime.credentials.get("runpod_api_key")
+            runpod = RunpodClient(api_key)
+            runpod.list_pods()
         except Exception as e:
             raise ToolProviderCredentialValidationError(str(e))
 
