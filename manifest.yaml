@@ -3,15 +3,15 @@ type: plugin
 author: yt-koike
 name: runpod
 label:
-  en_US: runpod
-  ja_JP: runpod
-  zh_Hans: runpod
-  pt_BR: runpod
+  en_US: Runpod
+  ja_JP: Runpod
+  zh_Hans: Runpod
+  pt_BR: Runpod
 description:
-  en_US: Runpod plugin for dify
-  ja_JP: Runpod plugin for dify
-  zh_Hans: Runpod plugin for dify
-  pt_BR: Runpod plugin for dify
+  en_US: Unofficial Runpod plugin for dify
+  ja_JP: Unofficial Runpod plugin for dify
+  zh_Hans: Unofficial Runpod plugin for dify
+  pt_BR: Unofficial Runpod plugin for dify
 icon: icon.svg
 icon_dark: icon-dark.svg
 resource:
