@@ -13,13 +13,13 @@ So far this plugin only supports API calls related to Pods.
 
 You can simply use this plugin by installing it.
 
-![_assets/setup.png]
+![setup](_assets/setup.png)
 
 ### Nodes
 
 This plugin has various nodes to use Runpod API.
 
-![_assets/nodes.png]
+![nodes](_assets/nodes.png)
 
 ### Required APIs and Credentials
 
